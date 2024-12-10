@@ -1,0 +1,48 @@
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+button {
+	border: 0;
+	background-image: linear-gradient(150deg,
+	#9500ff,
+	#09f,
+	#00ddff);
+	border-radius: 8px;
+	color: #fff;
+	display: flex;
+	font-size: 18px;
+	padding: 4px;
+	cursor: pointer;
+	transition: .3s;
+}
+button span{
+	background-color: #111;
+	padding: 16px 24px;
+	border-radius: 6px;
+	transition: .3s;
+}
+button:hover span {
+	background: none;
+}
+button:active {
+	transform: scale(0.9);
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 90vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+
+
+p > button:first-of-type {
+	font-size: 40px;
+}
+body {
+	overflow: hidden;
+}
