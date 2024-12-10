@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="Carta.css">
+</head>
+<body onclick="PlayAudio()">
+  <main>
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart">♥</span>
+      <p class="paper" id="mainMessage">
+        Tu sonrisa ilumina cualquier lugar, y tu alegría contagia como un rayo de sol. 
+        Eres una persona que llena de luz y calidez a quienes te rodean. ¡Feliz cumpleaños, que tus dias sean tan especial como tú!. <br>
+        <br>Atentamente Omar</p>
+      </p>
+      <div class="letter"></div>
+    </div>
+    <div class="options">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</butto>
+    </div>
+  </main>
+  <script src="Carta.js"></script>
+  <audio id="audio1" loop>
+    <source src="audio/cancion.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    function PlayAudio(){
+      document.getElementById("audio1").play();
+    }
+
+  </script>
+</body>
+</html>

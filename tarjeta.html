@@ -6,7 +6,7 @@
     <title>Tarjeta</title>
     <link rel="stylesheet" href="tarjeta.css">
 </head>
-<body>
+<body onclick="PlayAudio()">
     
 
 <div class="birthdayCard">
@@ -39,13 +39,21 @@
         <div class="wishes">
         <p>Querida Susana,</p>
         <p>Tu sonrisa ilumina cualquier lugar, y tu alegría contagia como un rayo de sol. 
-            Eres una persona que llena de luz y calidez a quienes te rodean. ¡Feliz cumpleaños, que tus dias seas tan especial como tú!. <br>
+            Eres una persona que llena de luz y calidez a quienes te rodean. ¡Feliz cumpleaños, que tus dias sean tan especial como tú!. <br>
         <br>Atentamente Omar</p>
         <p class="name">xxx</p>
         </div>
       </div>
     </div>
-    
+    <audio id="audio1" loop>
+      <source src="audio/cancion.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      function PlayAudio(){
+        document.getElementById("audio1").play();
+      }
+
+    </script>
     
 </body>
 </html>
